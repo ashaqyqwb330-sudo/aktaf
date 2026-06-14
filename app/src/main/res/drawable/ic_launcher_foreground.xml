@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="80dp"
+        android:height="80dp"
+        android:drawable="@drawable/ektifa_logo_with_name_1781220807771"
+        android:gravity="center" />
+</layer-list>

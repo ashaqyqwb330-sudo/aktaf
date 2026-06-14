@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدليل التقني والمنهجي التكاملي الشامل: منصة اكتفاء الذكية - الإصدار الثاني</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-darker: #030712;
+            --bg-dark: #090f21;
+            --bg-card: #0e1a30;
+            --primary-gold: #D4AF37;
+            --primary-gold-glow: rgba(212, 175, 55, 0.4);
+            --secondary-blue: #00b4d8;
+            --secondary-blue-glow: rgba(0, 180, 216, 0.25);
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --text-main: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --font-main: 'Cairo', sans-serif;
+            --font-code: 'Fira Code', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-darker);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.8;
+            font-size: 15px;
+            overflow-x: hidden;
+            display: flex;
+        }
+
+        /* Sidebar Panel styling */
+        .sidebar {
+            width: 350px;
+            background-color: var(--bg-dark);
+            border-left: 3px solid var(--primary-gold);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            overflow-y: auto;
+            padding: 30px 20px;
+            z-index: 100;
+            box-shadow: -8px 0 28px rgba(0, 0, 0, 0.7);
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 2px dashed rgba(212, 175, 55, 0.25);
+            margin-bottom: 25px;
+        }
+
+        .sidebar-header h2 {
+            color: var(--primary-gold);
+            font-weight: 900;
+            font-size: 1.4rem;
+            margin-top: 15px;
+            text-shadow: 0 0 12px var(--primary-gold-glow);
+        }
+
+        .sidebar-header p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        .nav-menu {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-bottom: 8px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-right: 4px solid transparent;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-gold);
+            background-color: rgba(212, 175, 55, 0.08);
+            border-right-color: var(--primary-gold);
+            padding-right: 20px;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+
+        .nav-link .icon {
+            margin-left: 12px;
+            font-size: 1.2rem;
+        }
+
+        /* Content Workspace */
+        .main-content {
+            margin-right: 350px;
+            width: calc(100% - 350px);
+            padding: 60px 80px;
+            min-height: 100vh;
+            background-color: var(--bg-darker);
+        }
+
+        /* Banner Design */
+        .portal-banner {
+            position: relative;
+            background: linear-gradient(135deg, #0e122b 0%, #030510 100%);
+            border: 1.5px solid rgba(212, 175, 55, 0.45);
+            padding: 55px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+        }
+
+        .portal-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+        }
+
+        .portal-badge {
+            display: inline-block;
+            background-color: rgba(212, 175, 55, 0.15);
+            border: 2px solid var(--primary-gold);
+            color: var(--primary-gold);
+            padding: 5px 18px;
+            font-size: 0.82rem;
+            font-weight: 900;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 12px var(--primary-gold-glow);
+        }
+
+        .portal-banner h1 {
+            font-weight: 900;
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            line-height: 1.4;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .portal-banner p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 950px;
+            line-height: 1.9;
+        }
+
+        .dev-badge-card {
+            display: flex;
+            align-items: center;
+            background-color: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 18px 24px;
+            border-radius: 12px;
+            margin-top: 30px;
+            gap: 18px;
+            max-width: fit-content;
+        }
+
+        .dev-badge-card .dev-avatar {
+            font-size: 2.22rem;
+            background: rgba(212, 175, 55, 0.15);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid var(--primary-gold);
+        }
+
+        .dev-badge-card .dev-detail h4 {
+            color: var(--primary-gold);
+            font-size: 1.05rem;
+            font-weight: 800;
+        }
+
+        .dev-badge-card .dev-detail p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        /* Sections and Headings */
+        section {
+            margin-bottom: 80px;
+            scroll-margin-top: 40px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            color: var(--primary-gold);
+            border-bottom: 3.5px solid var(--primary-gold);
+            padding-bottom: 12px;
+            margin-bottom: 35px;
+            font-weight: 900;
+            text-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+        }
+
+        .section-title span.badge-num {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-gold);
+            color: var(--bg-darker);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 1rem;
+            font-weight: 900;
+            margin-left: 18px;
+            box-shadow: 0 0 15px var(--primary-gold-glow);
+        }
+
+        p.section-intro {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            margin-bottom: 25px;
+            text-indent: 15px;
+            font-weight: 600;
+        }
+
+        /* Grid layouts */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background-color: var(--bg-card);
+            border: 1.5px solid rgba(212, 175, 55, 0.15);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '⭐';
+            position: absolute;
+            bottom: -10px;
+            left: -10px;
+            opacity: 0.05;
+            font-size: 4.5rem;
+            transform: rotate(-10deg);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-gold);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.22);
+        }
+
+        .feature-card h4 {
+            color: var(--primary-gold);
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.94rem;
+            line-height: 1.75;
+        }
+
+        /* Table structures */
+        .scrolling-table {
+            overflow-x: auto;
+            margin: 35px 0;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            text-align: right;
+            background-color: var(--bg-dark);
+        }
+
+        thead tr {
+            background-color: #06101f;
+            border-bottom: 2.5px solid var(--primary-gold);
+            color: var(--primary-gold);
+            font-weight: 800;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #14223b;
+            color: var(--text-main);
+        }
+
+        tbody tr:hover {
+            background-color: rgba(212, 175, 55, 0.04);
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: rgba(255, 255, 255, 0.012);
+        }
+
+        /* ASCII Architecture diagram */
+        .ascii-canvas {
+            font-family: var(--font-code);
+            background-color: #01040a;
+            color: var(--secondary-blue);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(0, 180, 216, 0.35);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            overflow-x: auto;
+            direction: ltr;
+            margin: 35px 0;
+            box-shadow: inset 0 0 15px rgba(0, 180, 216, 0.12);
+        }
+
+        /* Alerts visual style */
+        .status-box {
+            background-color: rgba(16, 185, 129, 0.06);
+            border-right: 5px solid var(--accent-green);
+            padding: 22px;
+            border-radius: 8px;
+            margin: 25px 0;
+            font-size: 0.98rem;
+            line-height: 1.75;
+        }
+
+        .status-box strong {
+            color: var(--accent-green);
+            display: block;
+            font-size: 1.08rem;
+            margin-bottom: 8px;
+        }
+
+        .problem-card {
+            background-color: rgba(239, 68, 68, 0.05);
+            border: 1.5px solid var(--accent-red);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .problem-card h4 {
+            color: var(--accent-red);
+            font-weight: 800;
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .problem-card .fix-section {
+            margin-top: 15px;
+            border-top: 1px dashed rgba(239, 68, 68, 0.25);
+            padding-top: 12px;
+        }
+
+        .problem-card .fix-section h5 {
+            color: var(--accent-green);
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        /* Code Presentation Blocks */
+        .block-container {
+            background-color: #01050e;
+            border: 1px solid #14213d;
+            border-radius: 14px;
+            margin: 35px 0;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65);
+        }
+
+        .block-header {
+            background-color: #080d1a;
+            padding: 12px 20px;
+            border-bottom: 1px solid #1a2948;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .block-header span.path {
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            direction: ltr;
+        }
+
+        .block-header span.tag {
+            background-color: rgba(212, 175, 55, 0.15);
+            color: var(--primary-gold);
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            font-weight: bold;
+        }
+
+        .block-body {
+            display: flex;
+            direction: ltr;
+        }
+
+        .num-col {
+            width: 48px;
+            padding: 16px 0;
+            background-color: #040812;
+            color: #2b3954;
+            text-align: right;
+            padding-right: 14px;
+            font-family: var(--font-code);
+            font-size: 0.82rem;
+            user-select: none;
+            border-right: 1px solid #12213a;
+        }
+
+        pre {
+            flex-grow: 1;
+            padding: 16px;
+            overflow-x: auto;
+            color: #c9d1d9;
+            font-family: var(--font-code);
+            font-size: 0.84rem;
+            line-height: 1.6;
+            background-color: #01050e;
+        }
+
+        /* Syntax code highlights */
+        .kw { color: #f97583; font-weight: bold; }
+        .ty { color: #ffab70; }
+        .st { color: #9ecbff; }
+        .cm { color: #6a737d; font-style: italic; }
+        .an { color: #b392f0; }
+        .ns { color: #79b8ff; }
+
+        /* Step List */
+        .step-list {
+            margin: 35px 0;
+            list-style: none;
+        }
+
+        .step-node {
+            position: relative;
+            padding-right: 55px;
+            margin-bottom: 30px;
+        }
+
+        .step-node::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            right: 0;
+            width: 32px;
+            height: 32px;
+            background-color: rgba(212, 175, 55, 0.12);
+            border: 2px solid var(--primary-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-gold);
+            font-weight: 900;
+            font-size: 0.95rem;
+            box-shadow: 0 0 10px var(--primary-gold-glow);
+        }
+
+        .step-node:nth-child(1)::before { content: "1"; }
+        .step-node:nth-child(2)::before { content: "2"; }
+        .step-node:nth-child(3)::before { content: "3"; }
+        .step-node:nth-child(4)::before { content: "4"; }
+        .step-node:nth-child(5)::before { content: "5"; }
+        .step-node:nth-child(6)::before { content: "6"; }
+        .step-node:nth-child(7)::before { content: "7"; }
+        .step-node:nth-child(8)::before { content: "8"; }
+
+        .step-node h4 {
+            color: var(--primary-gold);
+            font-weight: 800;
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .step-node p {
+            color: var(--text-secondary);
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+
+        footer {
+            border-top: 3px solid var(--primary-gold);
+            padding: 40px 0;
+            margin-top: 80px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        /* Scrollbar styles representation */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: var(--bg-darker);
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(212, 175, 55, 0.35);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(212, 175, 55, 0.65);
+        }
+
+        @media (max-width: 1100px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-left: none;
+                border-bottom: 2px solid var(--primary-gold);
+            }
+            .main-content {
+                margin-right: 0;
+                width: 100%;
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span style="font-size: 3.5rem;">👑</span>
+            <h2>دليل تجميع اكتفاء الشامل</h2>
+            <p>التشريح الهيكلي والمنهجي لكل كتل وأبعاد التطبيق التعليمي الطبي</p>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#strategic" class="nav-link active"><span class="icon">🔍</span>١. الفلسفة الكلية والمشروع</a></li>
+            <li class="nav-item"><a href="#architecture" class="nav-link"><span class="icon">🏗️</span>٢. المعمارية الكلية للأنظمة</a></li>
+            <li class="nav-item"><a href="#medical-hub" class="nav-link"><span class="icon">🩺</span>٣. مجمع الخدمات الطبية الشامل</a></li>
+            <li class="nav-item"><a href="#yemeni-library" class="nav-link"><span class="icon">📚</span>٤. محرك المناهج والرفوف الذكية</a></li>
+            <li class="nav-item"><a href="#spiritual-leisure" class="nav-link"><span class="icon">🕌</span>٥. المحور الديني والثقافي والمسابقات</a></li>
+            <li class="nav-item"><a href="#ai-triaging" class="nav-link"><span class="icon">🧠</span>٦. العيادة الذكية ومحاور الذكاء الاصطناعي</a></li>
+            <li class="nav-item"><a href="#adaptive-layout" class="nav-link"><span class="icon">📱</span>٧. البناء الشامل والملائمة اللوحية</a></li>
+            <li class="nav-item"><a href="#technical-ledger" class="nav-link"><span class="icon">🛑</span>٨. سجل المعارك وسحق مسببات الخطأ</a></li>
+            <li class="nav-item"><a href="#developer-manifesto" class="nav-link"><span class="icon">🛠️</span>٩. بيان المطور وطرق الاستنساخ الكامل</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        
+        <div class="portal-banner">
+            <span class="portal-badge">المعيار الموثق والمصدق لتوثيق المشاريع البرمجية المتكاملة</span>
+            <h1>الدليل المنهجي والتقني المطلق: البنية المعمارية الشاملة لمنصة اكتفاء (Ektefaa Suite)</h1>
+            <p>سجل هيدروليكي فني وتفصيلي كامل يغطي كامل ثنايا ومحاور وإحداثيات تطبيق "اكتفاء" الشامل، بدءاً من البنى التحتية للمعلومات وأنظمة قواعد البيانات المدمجة، مروراً بنظام الاستشفاء الرقمي والجرعات والعيادات الذكية المدعومة بالذكاء الاصطناعي، وصولاً إلى المكتبة اليمنية المتكاملة ذات الرفوف والقرائن الحسية، ونظم المعرفة التفاعلية الدينية والأكاديمية.</p>
+            
+            <div class="dev-badge-card">
+                <div class="dev-avatar">🧔</div>
+                <div class="dev-detail">
+                    <h4>المهندس إدريس يوسف المداني</h4>
+                    <p>المشرف التقني ومصمم البنية التحتية الكلية للمنصة | mmralqdhafy271@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. Philosophy -->
+        <section id="strategic">
+            <div class="section-title"><span class="number">١</span><h3>أولاً: الرؤية الأكاديمية والطبية لمشروع ومنصة اكتفاء</h3></div>
+            <p class="section-intro">
+                تأسست منصة ومحور <strong>"اكتفاء"</strong> كلية كبوابة رائدة تلبي أهم الميادين المجتمعية للأسرة العربية واليمنية، غايتها تحقيق <strong>"الاكتفاء الذاتي المعرفي"</strong> بدمج أربعة محاور محورية فريدة داخل تطبيق واحد متكامل وسريع:
+            </p>
+            <div class="status-box">
+                <strong>أهم محاور الاستقلالية والعمل الفني للتطبيق:</strong>
+                <ul>
+                    <li><strong>محور الاستشفاء الرقمي والطبي السريع:</strong> للجرعات وحساب مقادير السوائل الحيوية والمكتبات العلاجية ومساندة حالات الطوارئ والإسعافات الأولية بشكل فوري.</li>
+                    <li><strong>محور التعليم الأكاديمي والمدارس الشاملة:</strong> يجمع الكتب المنهجية اليمنية لتفادي أزمة نقصان الكتيبات مع محرك رفوف وقرائن بصرية وصوتية دافئة.</li>
+                    <li><strong>محور الرعاية والوعي الديني والثقافي:</strong> توفير منصات لأوقات الصلوات والبرامج الثقافية والغذائية والمسابقات مثل "رواد الفكر والتحدي تماشياً مع الروح الاجتماعية".</li>
+                    <li><strong>محور التناغم التكنولوجي التكيفي (Tablet & Pad Scalability):</strong> تصميم يضمن عدم التمدد أو التبعثر البصري للتطبيقات على شاشات الأيباد أو الأندرويد تابلت.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 2. Architecture -->
+        <section id="architecture">
+            <div class="section-title"><span class="badge-num">٢</span><h3>ثانياً: المعمارية الكلية لأجزاء وكتل المشروع البرمجي</h3></div>
+            <p class="section-intro">
+                يعمل تطبيق اكتفاء وفق هيكلية هندسية منظمة توزع الأنشطة (Activity Layers) وتوطدها عبر معمارية الحفظ التلقائي المحلي بالاتصال مع خوادم معالجات الذكاء والمزامنة التلغرامية للكتب:
+            </p>
+
+            <div class="ascii-canvas">
++-----------------------------------------------------------------------------------------------------------------+
+|                                              بوابة السلوك والتوجيه (MAIN PORTAL)                                |
+|                              MainActivity (Gateway with Adaptive Cinematic Door Animations)                     |
++-----------------------------------------------------------------------------------------------------------------+
+      | (تحويل السلوك والمحاور)
+      v
++-------------------------------------+-------------------------------------+-------------------------------------+
+|         مجمع الرعاية الطبية         |         مكتبة المنهج والمدارس       |       مجمع الثقافة ورياض اليقين     |
+|   - AiMedicalActivity (AI Clinic)   |   - SchoolLibraryActivity           |   - PrayersActivity (الصلوات)        |
+|   - DosageCalculatorActivity        |     (Sleek Wooden Shelving Engine)  |   - ProgramRajolAllahActivity        |
+|   - EmergencyActivity & FirstAid    |   - Interactive PDF Parser          |   - RwadCompetition (مسابقات رواد)   |
+|   - PatientsList & VitalSigns       |   - Arabic Normalizer Subsystem     |   - NutritionActivity (نصح غذائي)    |
++-------------------------------------+-------------------------------------+-------------------------------------+
+      |                                                 |                                                  |
+      +-------------------------------------------------+--------------------------------------------------+
+                                                        v
+                                +-----------------------------------------------+
+                                |          قاعدة بيانات Room الشاملة الموحدة    |
+                                |     (EktefaaDatabase -> SchoolBook & Patient) |
+                                +-----------------------------------------------+</div>
+
+            <p>قائمة تفصيلية بأنشطة التطبيق والمهمة الهندسية المسندة لكل واجهة بداخل اكتفاء الشامل:</p>
+            <div class="scrolling-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>النشاط المعرف (Activity Name)</th>
+                            <th>الأبعاد البرمجية الموكل إليها التحكم في المخرج البصري والعملي والتقني</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>MainActivity.kt</code></td><td>بوابة الصعود والمحور الرئيسي به غلاف الدخول المتحرك وفتح الأبواب الفخم والتكيفي لكافة المحاور الفرعية.</td></tr>
+                        <tr><td><code>SchoolLibraryActivity.kt</code></td><td>مجمع الكتب بجميع صفوف اليمن وعرض الرفوف ونموذج محاكاة تكرار الكتب السريع والقراءة والنطق.</td></tr>
+                        <tr><td><code>AiMedicalActivity.kt</code></td><td>العيادة العلاجية الذكية المتصلة بنوافذ Gemini API لرصد الأعراض والمشورة الإرشادية الفورية.</td></tr>
+                        <tr><td><code>DosageCalculatorActivity.kt</code></td><td>حاسبة المقادير السريرية والجرعات بناء على الأوزان للمحاذاة الفورية لعيادات الأطفال والطوارئ.</td></tr>
+                        <tr><td><code>EmergencyActivity.kt & FirstAidActivity.kt</code></td><td>لوحة نجدة إسعافية مصحوبة بإيقونات عائمة وخطوات منقذة للحياة للمصاب عند الحاجة المفاجئة.</td></tr>
+                        <tr><td><code>VitalSignsActivity.kt</code></td><td>مسجل ومحلل الضغط الحركي والسمنة ومناسيب الإشعارات الطبية.</td></tr>
+                        <tr><td><code>NutritionActivity.kt</code></td><td>مقياس الأوزان والكتل وسجلات الأغذية المخصصة لتكافؤ الحالة الجسدية للمثالية.</td></tr>
+                        <tr><td><code>RwadCompetitionActivity.kt</code></td><td>محرك التنافس المعرفي واختبار مستويات الرواد والترتيب الإحصائي للنقاط.</td></tr>
+                        <tr><td><code>PrayersActivity.kt & MenOfGodActivity.kt</code></td><td>أبواب تعبدية وتتبع ورد ومناجاة ودعاء، مع الالتزام الثقافي للنهوض القيمي والروحي بالنشء.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3. Medical Hub -->
+        <section id="medical-hub">
+            <div class="section-title"><span class="badge-num">٣</span><h3>ثالثاً: مجمع الخدمات الطبية الشامل والإسعاف الفوري الرقمي</h3></div>
+            <p class="section-intro">
+                يمثل مجمع الاستشفاء بداخل منصة اكتفاء نموذجاً فريداً من العيادات المتكاملة التي تدير حالات المرضى والجرعات بنسب تباين عالية الأمان:
+            </p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>💊 حاسبة الجرعات الذكية (Dosage Engine)</h4>
+                    <p>برمجية مبنية الرياضة الحسابية الطبية لتقرير مقدار الدواء وعدد الملي لترات التي يحتاجها الرضيع أو البالغ استناداً لنوع الدواء وكتلة الجسد ومقاييس الأطباء المعتمدة.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🩸 متعقب المؤشرات الحيوية (Vital Signs)</h4>
+                    <p>تسجيل الضغط الانقباضي والانبساطي، وسكر الدم، ونبضات القلب، مع معالجات داخلية تظهر أضواء ومؤثرات حارة (أحمر، برتقالي، أخضر) للتنبيه بمستوى استقرار المريض الفسيولوجي.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🚨 دليل الطوارئ والإسعاف النشط</h4>
+                    <p>يقوم بنشر عروض طارئة وتفاعلية معالجة بالمؤثرات عند حدوث جلطة أو ضيق للتنفس أو جرح عميق لتوجيه المنقذين بالتدليك والإنعاش فورا وبمراحل مصممة باحتياجات سريعة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Yemeni Library -->
+        <section id="yemeni-library">
+            <div class="section-title"><span class="badge-num">٤</span><h3>رابعاً: عمارة محرك المنهج اليمني ونظام الرفوف الخشبية</h3></div>
+            <p class="section-intro">
+                تتبنى منصة اكتفاء في محورها الأكاديمي المنهج الدراسي اليمني كاملاً من الصف الأول الابتدائي حتى الثالث الثانوي لمكافحة نقص المناهج عبر الواصفات المجدولة بانتظام تدرجي خشبي:
+            </p>
+
+            <div class="status-box">
+                <strong>الكتلة المرجعية لصفوف المنهج اليمني المدمجة في اكتفاء:</strong>
+                <p>تم تكثيف الفهرس اليمني ليجمع كتب القرآن الكريم، لغتنا العربية بكثير من أجزاءها، كتاب العلوم والرياضيات والفيزياء والكيمياء السنوية بالإضافة للتاريخ والجغرافيا والوطنية والسيرة النبية المطهرة.</p>
+            </div>
+
+            <div class="block-container">
+                <div class="block-header">
+                    <span class="path">com/example/database/SchoolBookEntity.kt</span>
+                    <span class="tag">Room Entity</span>
+                </div>
+                <div class="block-body">
+                    <div class="num-col">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13</div>
+                    <pre><code><span class="annotation">@Entity</span>(tableName = <span class="st">"school_books"</span>)
+<span class="kw">data class</span> <span class="ty">SchoolBookEntity</span>(
+    <span class="annotation">@PrimaryKey</span>(autoGenerate = <span class="kw">true</span>) <span class="kw">val</span> id: <span class="ty">Long</span> = <span class="ns">0</span>,
+    <span class="kw">val</span> title: <span class="ty">String</span>,
+    <span class="kw">val</span> grade: <span class="ty">Int</span>,
+    <span class="kw">val</span> subject: <span class="ty">String</span>,
+    <span class="kw">val</span> part: <span class="ty">Int</span> = <span class="ns">1</span>,
+    <span class="kw">val</span> year: <span class="ty">Int</span> = <span class="ns">0</span>,
+    <span class="kw">val</span> telegramUrl: <span class="ty">String</span> = <span class="st">""</span>,
+    <span class="kw">val</span> localPath: <span class="ty">String</span> = <span class="st">""</span>,
+    <span class="kw">val</span> coverPath: <span class="ty">String</span> = <span class="st">""</span>,
+    <span class="kw">val</span> isDownloaded: <span class="ty">Boolean</span> = <span class="kw">false</span>
+)</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Spiritual & Competitions -->
+        <section id="spiritual-leisure">
+            <div class="section-title"><span class="badge-num">٥</span><h3>خامساً: محور التربية الروحية وتطبيق مسابقات الرواد الفكري</h3></div>
+            <p class="section-intro">
+                تدمج منصة اكتفاء أبواباً لرعاية النشء والمجتمع تعبدياً وثقافياً لتهذيب الطباع ودفع القدرات الإدراكية للأعضاء من خلال محاور متميزة:
+            </p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>🕌 تعبدي رياض اليقين والمناجاة</h4>
+                    <p>منصة شاملة لتتبع أذكار الصباح والمساء والصلوات اليومية، وعداد التسبيح الذكي بمؤثرات اهتزاز صوتي لتمكن المصلي من التسبيح والذكر بأغطية بصرية مريحة جداً.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🏆 مسابقة الرواد الفكرية (Rwad Contest)</h4>
+                    <p>برامج تنافسية تجمع أسئلة أكاديمية وثقافية وعلمية، لتحدي عقول الطلاب ورصد الترتيب التراكمي وتحديث الدرجات بنقاط تمنح للرواد لرفع الحافز المعرفي لديهم.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🌱 التنشئة الثقافية الشاملة</h4>
+                    <p>تضمين برمجيات "رجال الله" و"برنامج رجال الله الدراسي" لنشر مبادئ المكارم والفضيلة والحب الوطني وتخفيف الضغوط في نفوس وعقول براعم المجتمع.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. AI Triage -->
+        <section id="ai-triaging">
+            <div class="section-title"><span class="badge-num">٦</span><h3>سادساً: العيادة الذكية المدعومة بأنظمة الذكاء الاصطناعي (Gemini REST)</h3></div>
+            <p class="section-intro">
+                بفضل التكامل المفتوح بالذكاء الاصطناعي، يضم اكتفاء <strong>العيادة الذكية (Smart Clinic Gateway)</strong> التي تعمل كنافذة استشارية متصلة بالمعالجات اللغوية للذكاء الاصطناعي:
+            </p>
+            <div class="status-box">
+                <strong>التحصين والأمان الطبي في العيادة الذكية:</strong>
+                <p>الشفرة تلتزم ببروتوكولات التوجيه الطبي الداخلي، حيث يعكف النظام السلوكي على تحذير المرضى بضرورة مراجعة الأطباء والذهاب للمشفى عند الحالات الحرجة والطارئة، مع الإشارة الدائمة لعدم استخدام تلميحات الذكاء الاصطناعي كبدائل مطلقة بل بوصف تكميلي إرشادي للاطمئنان والتثقيف.</p>
+            </div>
+        </section>
+
+        <!-- 7. Adaptive Layout & Tablet Optimization -->
+        <section id="adaptive-layout">
+            <div class="section-title"><span class="badge-num">٧</span><h3>سابعاً: البناء التكيفي وضبط ملاءمة المحاور في الشاشات اللوحية الكبيرة</h3></div>
+            <p class="section-intro">
+                أحد أهم معضلات البناء المعرفي في الأندرويد هو امتداد عروض الشبكة وفساد الأشكال والواجهات عند تشغيل الهواتف بأبعاد اللوحية أو التابلت. في اكتفاء تم حل هذا الأمر كلياً:
+            </p>
+
+            <div class="scrolling-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>منطقة المشكلة</th>
+                            <th>النمط التقليدي (Fixed Fixed Layout)</th>
+                            <th>المعيار التكيفي في اكتفاء (Adaptive Scalability Style)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>توزيع كتب المكتبة</td><td>الاعتماد على مصفوفات ثابتة تتسبب بظهور فراغ أسود مستمر في الشاشات الكبيرة.</td><td>استخدام <code>GridCells.Adaptive(minSize = 150.dp)</code> للموثق الفراغي وسرعة العرض.</td></tr>
+                        <tr><td>مربعات مجمع الخدمات</td><td>امتداد كبير يتسبب بالتواء الكلمات ونزوح الإيقونات وتلف الخطوط.</td><td>استعمال مقاييس مرنة تتوزع مع الأبعاد بالملي متر دون الإخلال بالمخرجات الهندسية.</td></tr>
+                        <tr><td>عروض التحدي والرواد</td><td>تزاحم في وسط الشاشة أو تمدد فائق للمستندات.</td><td>ضبط التماثل بالأوساط الرأسية وصناديق الحشو لضمان تماسك الخطوط بأي قياس.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 8. Technical Ledger / Troubleshooting -->
+        <section id="technical-ledger">
+            <div class="section-title"><span class="badge-num">٨</span><h3>ثامناً: سجل العثرات الفنية وسحق الأخطاء في منصة اكتفاء الشاملة</h3></div>
+            <p class="section-intro">
+                سجل بمواقع الخلل والأخطاء البرمجية الهامة التي تم مواجهتها خلال التطوير البرمجي لكتل تطبيق اكتفاء لإفادة المبرمجين مستقبلاً:
+            </p>
+
+            <div class="problem-card">
+                <h4>🛑 العقبة الأولى: خطأ تجميعي كلي بسبب 'tabIndicatorOffset' في شريط تبويبات المكتبة المدرسية</h4>
+                <p><strong>تشخيص العلة:</strong> حاولت جمل الشفرة توليد حاشية مؤشر تبويب متوافقة مع الأجهزة مستعينة بمؤشرات تتطلب مكتبات غير منزلة، مما تسبب برفض وبكاء المعالج <code>compileDebugKotlin</code> وفشل الحزمة البرمجية بضجيج تام.</p>
+                <div class="fix-section">
+                    <h5>✅ الحل المعماري الناجز:</h5>
+                    <p>قمنا بقشط وتبسيط المؤشر من خلال شطب 'tabIndicatorOffset' وتفويض المادة الافتراضية للتبويب بهيكلة التلوين المعتمدة بلغات اكتفاء ومستمرون بالتحديث والملائمة الراقية دون أي هبوط تجميعي.</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <h4>🛑 العقبة الثانية: تلف مسحات المربعات والازدحام التظليلي بنموذج عيادة الطوارئ والأدوات الحيوية</h4>
+                <p><strong>تشخيص العلة:</strong> حدوث تشوهات وتعرجات بصرية وامتزاج نصوص الضغط والنبض على أجهزة الأيباد واللوحيات بفقد السعة الفراغية.</p>
+                <div class="fix-section">
+                    <h5>✅ الحل المعماري الناجز:</h5>
+                    <p>أجرينا ترقية لمشيدات GridCells وتحويلها كلياً لبنى التكيف الأدبتيف الذكية <code>GridCells.Adaptive(minSize = 100.dp / 160.dp)</code> ورفع الإنسابية لتتوزع بسخاء الفراغ الكلي الحركي والمثير بصرياً للتعليم اللوحي.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Developer Manifesto -->
+        <section id="developer-guide">
+            <span id="developer-manifesto"></span>
+            <div class="section-title"><span class="number">٩</span><h3>تاسعاً: دليل تجميع وتركيب المنصة الشاملة للمطور</h3></div>
+            <p class="section-intro">
+                لبدء استنساخ وتشغيل منصة اكتفاء الشاملة من الصفر وتشييد الحزمة البرمجية المعدلة والمحدثة لتشغل فورا على الشاشات الكبيرة واللوحيات والأجهزة بنجاح تام، يرجى اتباع المنهج الفني التراكمي الموثق أدناه:
+            </p>
+            
+            <div class="step-list">
+                <div class="step-node">
+                    <h4>تهيئة الهوية والأبعاد الفراغية بالتصميم الموحد</h4>
+                    <p>تنزيل ملف <code>Theme.kt</code> المطور وضمان مطابقة الألوان مع الذهبي الهادئ <code>#C59A28</code> والأزرق والأبيض الدافئ، لتأمين هوية اكتفاء الكلاسيكية الفخمة.</p>
+                </div>
+                <div class="step-node">
+                    <h4>تحديث معرّف الحزمة وتغيير الإصدار المحدث بأمان</h4>
+                    <p>التعديل الفوري لمستند <code>app/build.gradle.kts</code> لرفع الرقم المعرف كحزمة مخصصة محدثة ومعدلة <code>applicationId = "com.aistudio.ektefaa.comprehensive"</code> وترقية الإصدار لـ <code>VersionName = "2.0.0"</code> و <code>VersionCode = 4</code> دون مساس بأساس التشييد التجميعي المعتمد.</p>
+                </div>
+                <div class="step-node">
+                    <h4>بناء ونموذج قاعدة بيانات الشاملة للكتب والمرضى</h4>
+                    <p>تفعيل الـ DAO والجداول الهجينة لملفات Room، لتبادل وحفظ الكتب والصفوف من 1 إلى 12 والاحتفاظ بسجلات الضغط والمؤشرات الطبية السريرية دون قلق.</p>
+                </div>
+                <div class="step-node">
+                    <h4>تنزيل داسور المعايرة والتكيف للشاشات اللوحية</h4>
+                    <p>ضمان وضع مستندات الأنشطة المترابطة (Activities) تحت مشيدات الـ Adaptive Column Cells لضمان ظهور التطبيق بابهى حلة على شاشات التابلت والأيباد والأندرويد فولد كلياً.</p>
+                </div>
+                <div class="step-node">
+                    <h4>المحاذاة الشاملة للعيادة الذكية وأنظمة مسابقة الرواد</h4>
+                    <p>التحقق من كفاءة الربط وتنزيل كتب المقررات وإعطاء الطلاب والمستعملين آليات الاستيراد وتذليل معضلات غياب الإضاءة.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>🏛️ الدليل المنهجي والعماري الشامل والمستبصر لمنصة اكتفاء التعليمية والطبية المتكاملة v2.0</strong></p>
+            <p>تاريخ الاعتمار ومزاوجة التوثيق المطور: <span style="direction: ltr; display: inline-block;">2026-06-13</span> | صمم خصيصاً بنسخ آمنة لا تدمر ما قبله وتغرس الجمالية في الفهم والاستعمال</p>
+            <p style="font-size: 1.05rem; color: var(--primary-gold); font-weight: bold; margin-top: 15px;">© 2026 إدريس يوسف المداني – جميع الحقوق محفوظة</p>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

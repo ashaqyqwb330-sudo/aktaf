@@ -1,0 +1,11 @@
+{
+  "name": "اكتفاء",
+  "description": "منصة حياة أسرية متكاملة للتقييم، الحافظة الذكية، متابعة الأبناء، والقرآن الكريم",
+  "requestFramePermissions": [
+    "LOCATION",
+    "CAMERA"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

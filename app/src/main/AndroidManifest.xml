@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- Satisfy AppOps attribution tag validation for empty/null tag from system frameworks -->
+    <attribution android:tag="@string/empty_tag" android:label="@string/app_name" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|smallestScreenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SchoolLibraryActivity"
+            android:exported="false"
+            android:label="المكتبة المدرسية"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".LeisureHubActivity"
+            android:exported="false"
+            android:label="ركن الاستراحة والمسابقات"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".ProgramRajolAllahActivity"
+            android:exported="false"
+            android:label="برنامج رجال الله"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".RwadCompetitionActivity"
+            android:exported="false"
+            android:label="مسابقة الرواد الذهبية"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".MenOfGodActivity"
+            android:exported="false"
+            android:label="برنامج رجال الله الجديد"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".PrayersActivity"
+            android:exported="false"
+            android:label="الأدعية"
+            android:theme="@style/Theme.MyApplication" />
+
+        <activity
+            android:name=".HealthHubActivity"
+            android:exported="false"
+            android:label="البوابة الصحية الذكية"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".PatientsListActivity"
+            android:exported="false"
+            android:label="سجل المرضى"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".DosageCalculatorActivity"
+            android:exported="false"
+            android:label="حاسبة الجرعات"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".VitalSignsActivity"
+            android:exported="false"
+            android:label="العلامات الحيوية"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".NutritionActivity"
+            android:exported="false"
+            android:label="التغذية والسوائل"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".AiMedicalActivity"
+            android:exported="false"
+            android:label="عيادة الذكاء الاصطناعي"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".FirstAidActivity"
+            android:exported="false"
+            android:label="دليل الإسعافات"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".MedicalLibraryActivity"
+            android:exported="false"
+            android:label="المكتبة الطبية"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".HealthReportsActivity"
+            android:exported="false"
+            android:label="مولد التقارير"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".EmergencyActivity"
+            android:exported="false"
+            android:label="قسم الطوارئ"
+            android:theme="@style/Theme.MyApplication" />
+
+        <service
+            android:name=".service.PatientReminderService"
+            android:foregroundServiceType="specialUse"
+            android:exported="false">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Enables alarm and voice medicine reminders for patients at home" />
+        </service>
+
+        <!-- Global Text-Selection Action to save selected text from any other app inside Ektefaa -->
+        <activity
+            android:name=".ProcessTextActivity"
+            android:label="حفظ في اكتفاء"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.ClipboardMonitorService"
+            android:foregroundServiceType="specialUse"
+            android:exported="false">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Enables background clipboard processing for family clips classification inside the main app" />
+        </service>
+
+        <service
+            android:name=".service.QuranAudioDownloadService"
+            android:foregroundServiceType="specialUse"
+            android:exported="false">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Allows families to download audio recitations of Holy Quran for offline listening and memorization tracking" />
+        </service>
+
+        <receiver
+            android:name=".service.PatientReminderReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".service.QuranGoalReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

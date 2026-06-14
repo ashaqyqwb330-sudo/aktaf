@@ -1,0 +1,1332 @@
+{
+  "books": [
+    {
+      "file": "grade1/islamic_1_2021.pdf",
+      "title": "1_اسلامية صف أول 2021 @l_alnader ",
+      "grade": 1,
+      "subject": "islamic",
+      "part": 1,
+      "year": 2021
+    },
+    {
+      "file": "grade1/quran_1_2021.pdf",
+      "title": "1_قرآن صف أول 2021  @l_alnader ",
+      "grade": 1,
+      "subject": "quran",
+      "part": 1,
+      "year": 2021
+    },
+    {
+      "file": "grade1/math_1_2023.pdf",
+      "title": "1_رياضيات صف أول ج ١ 2023  @L_alnader ",
+      "grade": 1,
+      "subject": "math",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade1/science_1_2022.pdf",
+      "title": "1_علوم صف أول ج ١ 2022 @L_alnader ",
+      "grade": 1,
+      "subject": "science",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade1/arabic_1_2021.pdf",
+      "title": "1_لغة عربية ج ١ صف أول 2021 @l_alnader ",
+      "grade": 1,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2021
+    },
+    {
+      "file": "grade1/math_1_part2_2023.pdf",
+      "title": "1_رياضيات صف أول ج ٢ 2023 @L_alnader ",
+      "grade": 1,
+      "subject": "math",
+      "part": 2,
+      "year": 2023
+    },
+    {
+      "file": "grade1/science_1_part2_2022.pdf",
+      "title": "1_علوم صف أول ج ٢ 2022  @L_alnader ",
+      "grade": 1,
+      "subject": "science",
+      "part": 2,
+      "year": 2022
+    },
+    {
+      "file": "grade1/arabic_1_part2_2021.pdf",
+      "title": "1_لغة عربية ج ٢ صف أول 2021 @l_alnader ",
+      "grade": 1,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2021
+    },
+    {
+      "file": "grade10/english_10_2023.pdf",
+      "title": "10_ english_pubils_10th 2023 @L_alnader ",
+      "grade": 10,
+      "subject": "english",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade10/biology_10_2017.pdf",
+      "title": "10_انشطة_أحياء_صف_اول_ثانوي_2017_@L_alnader_",
+      "grade": 10,
+      "subject": "biology",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/faith_10_2017.pdf",
+      "title": "10_ الإيمان صف اول ثانوي 2017 @L_alnader ",
+      "grade": 10,
+      "subject": "faith",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/computer_10_2017.pdf",
+      "title": "10_ الحاسوب صف اول ثانوي 2017 @L_alnader ",
+      "grade": 10,
+      "subject": "computer",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/history_10_2023.pdf",
+      "title": "10_ تاريخ ج ١ صف اول ثانوي 2023 @L_alnader ",
+      "grade": 10,
+      "subject": "history",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade10/history_10_part2_2017.pdf",
+      "title": "10_ تاريخ ج ٢ صف اول ثانوي 2017 @L_alnader ",
+      "grade": 10,
+      "subject": "history",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade10/geography_10_2017.pdf",
+      "title": "10_ جغرافيا صف اول ثانوي 2017 @L_alnader ",
+      "grade": 10,
+      "subject": "geography",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/physics_10_2017.pdf",
+      "title": "10_ فيزياء صف اول ثانوي 2017 @L_alnader ",
+      "grade": 10,
+      "subject": "physics",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/quran_10_2017.pdf",
+      "title": "10_ قرآن صف اول ثانوي 2017 @L_alnader ",
+      "grade": 10,
+      "subject": "quran",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/chemistry_10_2017.pdf",
+      "title": "10_ كيمياء صف اول ثانوي 2017 @L_alnader ",
+      "grade": 10,
+      "subject": "chemistry",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/literature_10_2017.pdf",
+      "title": "10_أدب_ونصوص_وبلاغة_ج_٢_صف_اول_ثانوي_2017_@L_alnader_",
+      "grade": 10,
+      "subject": "literature",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/physics_10_2017_exercises.pdf",
+      "title": "10_أنشطة_فيزياء_صف_اول_ثانوي_2017_@L_alnader_",
+      "grade": 10,
+      "subject": "physics",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/chemistry_10_2017_exercises.pdf",
+      "title": "10_أنشطة_كيمياء_صف_اول_ثانوي_2017_@L_alnader_",
+      "grade": 10,
+      "subject": "chemistry",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/hadith_10_2018.pdf",
+      "title": "10_الحديث_والفقه_صف_اول_ثانوي_2018_@L_alnader_",
+      "grade": 10,
+      "subject": "hadith",
+      "part": 1,
+      "year": 2018
+    },
+    {
+      "file": "grade10/seerah_10_2017.pdf",
+      "title": "10_السيرة_النبوية_صف_أول_ثانوي_2017_@L_alnader_",
+      "grade": 10,
+      "subject": "seerah",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/10________________________10_2017.pdf",
+      "title": "10_المجتمع_اليمني_صف_أول_ثانوي_2017_@L_alnader_",
+      "grade": 10,
+      "subject": "10_______________________",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/grammar_10_2017.pdf",
+      "title": "10_نحو_و_صرف_ج_١_صف_اول_ثانوي_2017_@L_alnader",
+      "grade": 10,
+      "subject": "grammar",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/math_10_2018_exercises.pdf",
+      "title": "10_تمارين_رياضيات_صف_اول_ثانوي_2018_@L_alnader_",
+      "grade": 10,
+      "subject": "math",
+      "part": 1,
+      "year": 2018
+    },
+    {
+      "file": "grade10/math_10_2017.pdf",
+      "title": "10_رياضيات_ج_١_صف_اول_ثانوي_2017_@L_alnader_",
+      "grade": 10,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade10/grammar_10_part2_2017.pdf",
+      "title": "10_نحو_وصرف_ج٢_صف_اول_ثانوي_2017_@L_alnader_",
+      "grade": 10,
+      "subject": "grammar",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade11/biology_11_2017.pdf",
+      "title": "11_  أحياء  صف ثاني ثانوي 2017 L_alnader ",
+      "grade": 11,
+      "subject": "biology",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/physics_11_2017.pdf",
+      "title": "11_  فيزياء صف ثاني ثانوي 2017 L_alnader ",
+      "grade": 11,
+      "subject": "physics",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/chemistry_11_2017.pdf",
+      "title": "11_  كيمياء  صف ثاني ثانوي 2017 L_alnader ",
+      "grade": 11,
+      "subject": "chemistry",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/english_11.pdf",
+      "title": "11_كتاب_انجليزي_كورس_ثاني_ثانوي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 11,
+      "subject": "english",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade11/faith_11_2018.pdf",
+      "title": "11_ الإيمان صف ثاني ثانوي 2018 L_alnader ",
+      "grade": 11,
+      "subject": "faith",
+      "part": 1,
+      "year": 2018
+    },
+    {
+      "file": "grade11/quran_11_2017.pdf",
+      "title": "11_ قرآن ج ١ صف ثاني ثانوي 2017 L_alnader ",
+      "grade": 11,
+      "subject": "quran",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/quran_11_part2_2017.pdf",
+      "title": "11_ قرآن ج ٢ صف ثاني ثانوي 2017 L_alnader ",
+      "grade": 11,
+      "subject": "quran",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade11/literature_11_2017.pdf",
+      "title": "11_أدب_ونصوص_وبلاغة_ج_١_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "literature",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/biology_11_2017_exercises.pdf",
+      "title": "11_أنشطة_أحياء_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "biology",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/physics_11_2017_exercises.pdf",
+      "title": "11_أنشطة_فيزياء_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "physics",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/chemistry_11_2017_exercises.pdf",
+      "title": "11_أنشطة_كيمياء_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "chemistry",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/computer_11_2017.pdf",
+      "title": "11_الحاسوب_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "computer",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/hadith_11_2017.pdf",
+      "title": "11_الحديث_والفقه_ج_٢_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "hadith",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/seerah_11_2017.pdf",
+      "title": "11_السيرة_النبوية_ج_٢_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "seerah",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/reading_11_2017.pdf",
+      "title": "11_القراءة_ج_٢_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "reading",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/history_11_2017.pdf",
+      "title": "11_تاريخ_ج_١_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "history",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/math_11_2017_exercises.pdf",
+      "title": "11_تمارين_رياضيات_علمي_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/geography_11_2017.pdf",
+      "title": "11_جغرافيا_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "geography",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/math_11_2017.pdf",
+      "title": "11_رياضيات_علمي_ج_٢_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/grammar_11_2017.pdf",
+      "title": "11_نحو_وصرف_ج_٢_صف_ثاني_ثانوي_2017_L_alnader_",
+      "grade": 11,
+      "subject": "grammar",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade11/exercise_mathematic_lit_1_11.pdf",
+      "title": "exercise_mathematic_lit_11th",
+      "grade": 11,
+      "subject": "exercise_mathematic_lit_1",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade11/fikh_11th__2__pdf_11.pdf",
+      "title": "fikh_11th (2)",
+      "grade": 11,
+      "subject": "fikh_11th__2__pdf",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade11/nahw_part1_11th__1__pdf_11.pdf",
+      "title": "nahw_part1_11th (1)",
+      "grade": 11,
+      "subject": "nahw_part1_11th__1__pdf",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade11/nosos_part1_11th_pdf_11.pdf",
+      "title": "nosos_part1_11th",
+      "grade": 11,
+      "subject": "nosos_part1_11th_pdf",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/12_English_pubils_12th____12.pdf",
+      "title": "12_English_pubils_12th_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 12,
+      "subject": "12_English_pubils_12th___",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/literature_12.pdf",
+      "title": "12_الأدب_والنصوص_والنقد_ثالث_ثانوي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 12,
+      "subject": "literature",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/reading_12.pdf",
+      "title": "12_القراءة_ثالث_ثانوي_طـ¹⁴⁴⁷💢²⁰²⁵ــبعة",
+      "grade": 12,
+      "subject": "reading",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/grammar_12.pdf",
+      "title": "12_النحو_والصرف_ثالث_ثانوي_طـ_¹⁴⁴⁷💢²⁰²⁵ـبعة_مصورة",
+      "grade": 12,
+      "subject": "grammar",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/math_12.pdf",
+      "title": "12_رياضيات_ثالث_ثانوي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة",
+      "grade": 12,
+      "subject": "math",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/biology_12.pdf",
+      "title": "12_كتاب_الاحياء_ثالث_ثانوي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 12,
+      "subject": "biology",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/faith_12.pdf",
+      "title": "12_كتاب_الايمان_ثالث_ثانوي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 12,
+      "subject": "faith",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/hadith_12.pdf",
+      "title": "12_كتاب_الحديث_والتهذيب_ثالث_ثانوي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 12,
+      "subject": "hadith",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/seerah_12.pdf",
+      "title": "12_كتاب_السيرة_ثالث_ثانوي_طـ_¹⁴⁴⁷💢²⁰²⁵ـبعة",
+      "grade": 12,
+      "subject": "seerah",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/physics_12.pdf",
+      "title": "12_كتاب_الفيزياء_ثالث_ثانوي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 12,
+      "subject": "physics",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/quran_12.pdf",
+      "title": "12_كتاب_القرآن_الكريم_وعلومه_ثالث_ثانوي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 12,
+      "subject": "quran",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/chemistry_12.pdf",
+      "title": "12_كتاب_الكيمياء_ثالث_ثانوي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 12,
+      "subject": "chemistry",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/nosos_12th_pdf_12.pdf",
+      "title": "nosos_12th",
+      "grade": 12,
+      "subject": "nosos_12th_pdf",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade12/______3_________2027______12_2027.pdf",
+      "title": "تيسير_3ث_الجديد_2027_ـ_نقد_ـ_التجربة_الشعرية",
+      "grade": 12,
+      "subject": "______3_________2027_____",
+      "part": 1,
+      "year": 2027
+    },
+    {
+      "file": "grade2/islamic_2.pdf",
+      "title": "02_التربية_الاسلامية_ثاني_أساسي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵",
+      "grade": 2,
+      "subject": "islamic",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade2/quran_2.pdf",
+      "title": "02_القرآن_الكريم_ثاني_أساسي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_مخفض",
+      "grade": 2,
+      "subject": "quran",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade2/math_2_2023.pdf",
+      "title": "2_ رياضيات ج١ صف الثاني 2023 @l_alnader ",
+      "grade": 2,
+      "subject": "math",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade2/science_2_2023.pdf",
+      "title": "2_علوم  ج ١ صف ثاني 2023 @l_alnader ",
+      "grade": 2,
+      "subject": "science",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade2/arabic_2_2022.pdf",
+      "title": "2_لغة عربية صف ثاني ج ١ 2022 @L_alnader ",
+      "grade": 2,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade2/math_2_part2_2023.pdf",
+      "title": "2_ رياضيات ج٢  صف الثاني 2023 @l_alnader ",
+      "grade": 2,
+      "subject": "math",
+      "part": 2,
+      "year": 2023
+    },
+    {
+      "file": "grade2/science_2_part2_2023.pdf",
+      "title": "2_علوم  ج ٢ صف ثاني 2023 @l_alnader ",
+      "grade": 2,
+      "subject": "science",
+      "part": 2,
+      "year": 2023
+    },
+    {
+      "file": "grade2/2______________2023__l_al_2_2023.pdf",
+      "title": "2_قران صف ثاني 2023 @l_alnader ",
+      "grade": 2,
+      "subject": "2______________2023__l_al",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade2/arabic_2_part2_2022.pdf",
+      "title": "2_لغة عربية صف ثاني ج ٢ 2022 @L_alnader ",
+      "grade": 2,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2022
+    },
+    {
+      "file": "grade3/social_3.pdf",
+      "title": "03_اجتماعيات_ثالث_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ـبعة",
+      "grade": 3,
+      "subject": "social",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade3/islamic_3_2021.pdf",
+      "title": "3_التربية_الاسلامية_صف_ثالث_2021@_L_alnader_",
+      "grade": 3,
+      "subject": "islamic",
+      "part": 1,
+      "year": 2021
+    },
+    {
+      "file": "grade3/quran_3.pdf",
+      "title": "03_القرآن_الكريم_ثالث_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة",
+      "grade": 3,
+      "subject": "quran",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade3/science_3_2022.pdf",
+      "title": "3_ العلوم  صف ثالث ج١ 2022 @L_alnader ",
+      "grade": 3,
+      "subject": "science",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade3/arabic_3_2022.pdf",
+      "title": "3_لغة عربية صف ثالث ج ١ 2022@L_alnader ",
+      "grade": 3,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade3/science_3_part2_2022.pdf",
+      "title": "3_ العلوم  صف ثالث ج٢ 2022 @L_alnader ",
+      "grade": 3,
+      "subject": "science",
+      "part": 2,
+      "year": 2022
+    },
+    {
+      "file": "grade3/math_3_2022.pdf",
+      "title": "3_ رياضيات صف ثالث ج١ 2022 @L_alnader ",
+      "grade": 3,
+      "subject": "math",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade3/math_3_part2_2022.pdf",
+      "title": "3_ رياضيات صف ثالث ج٢ 2022 @L_alnader ",
+      "grade": 3,
+      "subject": "math",
+      "part": 2,
+      "year": 2022
+    },
+    {
+      "file": "grade3/3_________________________3_2021.pdf",
+      "title": "3_التربية_الاجتماعية_صف_ثالث_2021_@L_alnader_",
+      "grade": 3,
+      "subject": "3________________________",
+      "part": 1,
+      "year": 2021
+    },
+    {
+      "file": "grade3/3______________2021__l_al_3_2021.pdf",
+      "title": "3_قران صف ثالث 2021 @l_alnader ",
+      "grade": 3,
+      "subject": "3______________2021__l_al",
+      "part": 1,
+      "year": 2021
+    },
+    {
+      "file": "grade3/arabic_3_part2_2022.pdf",
+      "title": "3_لغة عربية صف ثالث ج٢ 2022@Lalnader ",
+      "grade": 3,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2022
+    },
+    {
+      "file": "grade4/social_4.pdf",
+      "title": "04_اجتماعيات_رابع_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة",
+      "grade": 4,
+      "subject": "social",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade4/islamic_4.pdf",
+      "title": "04_التربية_الاسلامية_رابع_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة",
+      "grade": 4,
+      "subject": "islamic",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade4/quran_4_2023.pdf",
+      "title": "4_ قرآن صف رابع 2023 @L_alnader  ",
+      "grade": 4,
+      "subject": "quran",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade4/math_4_2017.pdf",
+      "title": "4_ رياضيات صف رابع ج ١ 2017 @L_alnader ",
+      "grade": 4,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade4/science_4_2017.pdf",
+      "title": "4_ علوم صف رابع ج ١ 2017 @L_alnader ",
+      "grade": 4,
+      "subject": "science",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade4/arabic_4_2023.pdf",
+      "title": "4_ لغة عربية صف رابع ج ١ 2023 @L_alnader ",
+      "grade": 4,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade4/math_4_part2_2017.pdf",
+      "title": "4_ رياضيات صف رابع ج ٢ 2017 @L_alnader ",
+      "grade": 4,
+      "subject": "math",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade4/science_4_part2_2017.pdf",
+      "title": "4_ علوم صف رابع ج ٢ 2017 @L_alnader ",
+      "grade": 4,
+      "subject": "science",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade4/arabic_4_part2_2021.pdf",
+      "title": "4_ لغة عربية صف رابع ج ٢ 2021 @L_alnader ",
+      "grade": 4,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2021
+    },
+    {
+      "file": "grade4/4_________________________4_2023.pdf",
+      "title": "4_التربية_الإسلامية_صف_رابع_2023_@L_alnader_",
+      "grade": 4,
+      "subject": "4________________________",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade5/islamic_5.pdf",
+      "title": "05_التربية_الاسلامية_خامس_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة_2",
+      "grade": 5,
+      "subject": "islamic",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade5/geography_5_2022.pdf",
+      "title": "5_ جغرافيا صف خامس 2022 @L_alnader ",
+      "grade": 5,
+      "subject": "geography",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade5/math_5_2017.pdf",
+      "title": "5_ رياضيات صف خامس ج ١ 2017  @L_alnader ",
+      "grade": 5,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade5/science_5_2017.pdf",
+      "title": "5_ علوم صف  خامس ج ١ 2017 @L_alnader ",
+      "grade": 5,
+      "subject": "science",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade5/arabic_5_part2_2022.pdf",
+      "title": "5_ لغة عربية صف خامس ج ٢ 2022 @L_alnader ",
+      "grade": 5,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2022
+    },
+    {
+      "file": "grade5/history_5_2023.pdf",
+      "title": "5_ تاريخ صف خامس 2023 @L_alnader ",
+      "grade": 5,
+      "subject": "history",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade5/math_5_part2_2017.pdf",
+      "title": "5_ رياضيات صف خامس ج ٢ 2017  @L_alnader",
+      "grade": 5,
+      "subject": "math",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade5/science_5_part2_2017.pdf",
+      "title": "5_ علوم صف  خامس ج ٢ 2017 @L_alnader ",
+      "grade": 5,
+      "subject": "science",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade5/quran_5_2023.pdf",
+      "title": "5_ قرآن صف خامس 2023 @L_alnader ",
+      "grade": 5,
+      "subject": "quran",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade5/arabic_5_2023.pdf",
+      "title": "5_ لغة عربية صف خامس ج ١ 2023 @L_alnader ",
+      "grade": 5,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade5/5_________________________5_2023.pdf",
+      "title": "5_التربية_الإسلامية_صف_خامس_2023_@L_alnader_",
+      "grade": 5,
+      "subject": "5________________________",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade6/islamic_6.pdf",
+      "title": "06_التربية_الاسلامية_سادس_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة",
+      "grade": 6,
+      "subject": "islamic",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade6/06________________________6.pdf",
+      "title": "06_التربية_الوطنية_سادس_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة_1",
+      "grade": 6,
+      "subject": "06_______________________",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade6/quran_6_2023.pdf",
+      "title": "6_ قرآن صف سادس 2023 @L_alnader ",
+      "grade": 6,
+      "subject": "quran",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade6/history_6_2022.pdf",
+      "title": "6_ تاريخ صف سادس 2022 @L_alnader ",
+      "grade": 6,
+      "subject": "history",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade6/geography_6_2022.pdf",
+      "title": "6_ جغرافيا صف سادس 2022 @L_alnader ",
+      "grade": 6,
+      "subject": "geography",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade6/science_6_2017.pdf",
+      "title": "6_  علوم صف سادس ج ١ 2017 @L_alnader ",
+      "grade": 6,
+      "subject": "science",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade6/arabic_6_2022.pdf",
+      "title": "6_ لغة عربية صف سادس ج ١ 2022 @L_alnader ",
+      "grade": 6,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade6/science_6_part2_2017.pdf",
+      "title": "6_  علوم صف سادس ج ٢ 2017 @L_alnader ",
+      "grade": 6,
+      "subject": "science",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade6/math_6_2017.pdf",
+      "title": "6_ رياضيات صف سادس ج ١ 2017 @L_alnader ",
+      "grade": 6,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade6/math_6_part2_2017.pdf",
+      "title": "6_ رياضيات صف سادس ج ٢ 2017 @L_alnader ",
+      "grade": 6,
+      "subject": "math",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade6/arabic_6_part2_2022.pdf",
+      "title": "6_ لغة عربية صف سادس ج ٢ 2022 @L_alnader  ",
+      "grade": 6,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2022
+    },
+    {
+      "file": "grade6/6_________________________6_2023.pdf",
+      "title": "6_التربية_الإسلامية_صف_سادس_2023_@L_alnader_",
+      "grade": 6,
+      "subject": "6________________________",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade7/islamic_7.pdf",
+      "title": "07_التربية_الاسلامية_سابع_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة",
+      "grade": 7,
+      "subject": "islamic",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade7/07________________________7.pdf",
+      "title": "07_التربية_الوطنية_سابع_أساسي_طـ_¹⁴⁴⁷💢²⁰²⁵ــبعة_1",
+      "grade": 7,
+      "subject": "07_______________________",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade7/quran_7_2023.pdf",
+      "title": "7_ قرآن صف سابع 2023 @L_alnader ",
+      "grade": 7,
+      "subject": "quran",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade7/math_7_2017.pdf",
+      "title": "7_ رياضيات صف سابع 2017 @L_alnader",
+      "grade": 7,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade7/english_7.pdf",
+      "title": "7_ english_pubils_7th @L_alnader",
+      "grade": 7,
+      "subject": "english",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade7/islamic_7_part2_2023.pdf",
+      "title": "7_ اسلامية سابع ج ٢ 2023 @ L_alnader ",
+      "grade": 7,
+      "subject": "islamic",
+      "part": 2,
+      "year": 2023
+    },
+    {
+      "file": "grade7/history_7_2017.pdf",
+      "title": "7_ تاريخ ج ١ صف سابع 2017 @L_alnader",
+      "grade": 7,
+      "subject": "history",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade7/history_7_part2_2017.pdf",
+      "title": "7_ تاريخ ج ٢ صف سابع 2017 @L_alnader",
+      "grade": 7,
+      "subject": "history",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade7/geography_7_2022.pdf",
+      "title": "7_ جغرافيا صف سابع 2022 @L_alnader",
+      "grade": 7,
+      "subject": "geography",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade7/science_7.pdf",
+      "title": "7_ علوم ج ١ صف سابع @L_alnader",
+      "grade": 7,
+      "subject": "science",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade7/science_7_part2.pdf",
+      "title": "7_ علوم ج ٢ صف سابع @L_alnader",
+      "grade": 7,
+      "subject": "science",
+      "part": 2,
+      "year": 0
+    },
+    {
+      "file": "grade7/arabic_7_2023.pdf",
+      "title": "7_ لغة عربية ج ١ صف سابع 2023 @L_alnader ",
+      "grade": 7,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade7/arabic_7_part2_2023.pdf",
+      "title": "7_ لغة عربية ج ٢ صف سابع 2023 @L_alnader ",
+      "grade": 7,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2023
+    },
+    {
+      "file": "grade7/7_________________________7_2023.pdf",
+      "title": "7_التربية_الإسلامية_ج_١_صف_سابع_2023_@L_alnader_",
+      "grade": 7,
+      "subject": "7________________________",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade8/islamic_8.pdf",
+      "title": "08_التربية_الاسلامية_ج1_ثامن_أساسي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م",
+      "grade": 8,
+      "subject": "islamic",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade8/quran_8_2023.pdf",
+      "title": "8_ قرآن صف ثامن 2023 @L_alnader ",
+      "grade": 8,
+      "subject": "quran",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade8/english_8_exercises.pdf",
+      "title": "08_انجليزي_تمارين_work_ثامن_أساسي_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م_1",
+      "grade": 8,
+      "subject": "english",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade8/english_8_2023.pdf",
+      "title": "8_ english_pubils_8th2023 @L_alnader .",
+      "grade": 8,
+      "subject": "english",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade8/geography_8_2023.pdf",
+      "title": "8_ جغرافيا صف ثامن 2023 @L_alnader ",
+      "grade": 8,
+      "subject": "geography",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade8/science_8_2017.pdf",
+      "title": "8_ علوم صف ثامن ج ١ 2017 @L_alnader",
+      "grade": 8,
+      "subject": "science",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade8/arabic_8_2023.pdf",
+      "title": "8_ لغة عربية صف ثامن ج١ 2023 @L_alnader ",
+      "grade": 8,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade8/history_8_2017.pdf",
+      "title": "8_ تاريخ صف ثامن ج ١ 2017 @L_alnader",
+      "grade": 8,
+      "subject": "history",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade8/history_8_part2_2017.pdf",
+      "title": "8_ تاريخ صف ثامن ج ٢ 2017 @L_alnader",
+      "grade": 8,
+      "subject": "history",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade8/math_8_2017.pdf",
+      "title": "8_ رياضيات صف ثامن ج ١ 2017 @L_alnader",
+      "grade": 8,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade8/math_8_part2_2017.pdf",
+      "title": "8_ رياضيات صف ثامن ج ٢  2017 @L_alnader",
+      "grade": 8,
+      "subject": "math",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade8/science_8_part2_2017.pdf",
+      "title": "8_ علوم  صف ثامن ج ٢ 2017 @L_alnader",
+      "grade": 8,
+      "subject": "science",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade8/arabic_8_part2_2023.pdf",
+      "title": "8_ لغة عربية ج ٢ صف ثامن 2023 @L_alnader ",
+      "grade": 8,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2023
+    },
+    {
+      "file": "grade8/8_________________________8_2023.pdf",
+      "title": "8_التربية_الإسلامية_صف_ثامن_ج_١_2023_@L_alnader_",
+      "grade": 8,
+      "subject": "8________________________",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade8/8_________________________8_part2_2023.pdf",
+      "title": "8_التربية_الإسلامية_صف_ثامن_ج٢_2023_@alnader_",
+      "grade": 8,
+      "subject": "8________________________",
+      "part": 2,
+      "year": 2023
+    },
+    {
+      "file": "grade8/history_part1_8th_1_pdf_8.pdf",
+      "title": "history_part1_8th-1",
+      "grade": 8,
+      "subject": "history_part1_8th_1_pdf",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade8/history_part2_8th_1_pdf_8_part2.pdf",
+      "title": "history_part2_8th-1",
+      "grade": 8,
+      "subject": "history_part2_8th_1_pdf",
+      "part": 2,
+      "year": 0
+    },
+    {
+      "file": "grade9/english_9_2023.pdf",
+      "title": "9_ english_pubils_9t 2023  @L_alnader  ",
+      "grade": 9,
+      "subject": "english",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade9/09________________________9.pdf",
+      "title": "09_التربية_الوطنية_تاسع_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م_1",
+      "grade": 9,
+      "subject": "09_______________________",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade9/09________________1_______9.pdf",
+      "title": "09_اللغة_العربية_ج1_تاسع_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م_1",
+      "grade": 9,
+      "subject": "09________________1______",
+      "part": 1,
+      "year": 0
+    },
+    {
+      "file": "grade9/history_9_2021.pdf",
+      "title": "9_ تاريخ ج ١ صف تاسع  2021 @L_alnader  ",
+      "grade": 9,
+      "subject": "history",
+      "part": 1,
+      "year": 2021
+    },
+    {
+      "file": "grade9/science_9_2022.pdf",
+      "title": "9_ علوم ج ١ صف تاسع 2022 @L_alnader ",
+      "grade": 9,
+      "subject": "science",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade9/history_9_part2_2022.pdf",
+      "title": "9_ تاريخ ج ٢ صف تاسع 2022 @L_alnader ",
+      "grade": 9,
+      "subject": "history",
+      "part": 2,
+      "year": 2022
+    },
+    {
+      "file": "grade9/geography_9_2022.pdf",
+      "title": "9_ جغرافيا صف تاسع 2022 @L_alnader ",
+      "grade": 9,
+      "subject": "geography",
+      "part": 1,
+      "year": 2022
+    },
+    {
+      "file": "grade9/math_9_2017.pdf",
+      "title": "9_ رياضيات ج ١ صف تاسع 2017 @L_alnader ",
+      "grade": 9,
+      "subject": "math",
+      "part": 1,
+      "year": 2017
+    },
+    {
+      "file": "grade9/math_9_part2_2017.pdf",
+      "title": "9_ رياضيات ج ٢ صف تاسع 2017 @L_alnader ",
+      "grade": 9,
+      "subject": "math",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade9/science_9_part2_2017.pdf",
+      "title": "9_ علوم ج ٢ صف تاسع 2017 @L_alnader ",
+      "grade": 9,
+      "subject": "science",
+      "part": 2,
+      "year": 2017
+    },
+    {
+      "file": "grade9/quran_9_2023.pdf",
+      "title": "9_ قرآن صف تاسع 2023 @L_alnader ",
+      "grade": 9,
+      "subject": "quran",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade9/arabic_9_part2_2023.pdf",
+      "title": "9_ لغة عربية ج ٢ صف تاسع 2023 @L_alnader ",
+      "grade": 9,
+      "subject": "arabic",
+      "part": 2,
+      "year": 2023
+    },
+    {
+      "file": "grade9/arabic_9_2023.pdf",
+      "title": "9_ لغة عربيةج ١ صف تاسع 2023 @L_alnader ",
+      "grade": 9,
+      "subject": "arabic",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade9/9_________________________9_2023.pdf",
+      "title": "9_التربية_الوطنية_صف_تاسع_2023_@L_alnader",
+      "grade": 9,
+      "subject": "9________________________",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade9/islamic_9_2023.pdf",
+      "title": "9_التربية_الاسلامية_صف_تاسع_2023_@L_alnader_",
+      "grade": 9,
+      "subject": "islamic",
+      "part": 1,
+      "year": 2023
+    },
+    {
+      "file": "grade0/islamic_0.pdf",
+      "title": "09_التربية_الاسلاميةج1_تاسع_طـ_¹⁴⁴⁷هـ💢²⁰²⁵_²⁰²⁶م_1",
+      "grade": 0,
+      "subject": "islamic",
+      "part": 1,
+      "year": 0
+    }
+  ]
+}
